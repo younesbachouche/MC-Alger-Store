@@ -1,4 +1,3 @@
-
 import React, { useRef, useEffect } from "react";
 import { sponsors } from "@/lib/products";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -11,8 +10,9 @@ const SponsorsSection: React.FC = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
-            observer.unobserve(entry.target);
+            entry.target.classList.add('animate-fade-in'); // Add fade-in class
+            entry.target.classList.remove('opacity-0'); // Remove initial opacity
+            observer.unobserve(entry.target); // Stop observing after animation triggers
           }
         });
       },
