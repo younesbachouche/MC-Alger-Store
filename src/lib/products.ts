@@ -149,7 +149,7 @@ export const sponsors = [
   },
   {
     name: "Ooredoo",
-    imageUrl: "https://www.telecomreviewafrica.com/images/stories/2017/07/news-06-07-03.jpg"
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Ooredoo_logo_2017.png"
   },
   {
     name: "Messad Water",
