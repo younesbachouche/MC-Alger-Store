@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               <h3 className="text-xl font-bold">MC Alger</h3>
             </div>
             <p className="text-white/80 mb-4 text-sm">
-              Mouloudia Club d'Alger, fondé en 1921, est l'un des clubs de football les plus performants d'Algérie, connu pour sa riche histoire et sa base de supporters passionnés.
+              Mouloudia Club d'Alger (Le Doyen d'Alger), fondé en 1921, est l'un des clubs de football les plus performants d'Algérie, connu pour sa riche histoire et sa base de supporters passionnés.
             </p>
             <div className="flex space-x-3">
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
