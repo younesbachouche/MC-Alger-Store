@@ -19,7 +19,7 @@ export const products: Product[] = [
   {
     id: "home-tshirt",
     name: "Maillot Domicile MC Alger",
-    price: 2500,
+    price: 8000,
     imageUrl: "https://puma.dz/images/products/mca/780819_01.jpg",
     category: "maillots",
     description: "Maillot officiel MC Alger domicile pour la saison actuelle.",
@@ -36,7 +36,7 @@ export const products: Product[] = [
   {
     id: "away-tshirt",
     name: "Maillot Extérieur MC Alger",
-    price: 2500,
+    price: 8000,
     imageUrl: "https://filebrowser-production-5917.up.railway.app/api/public/dl/wrwgPXDZ?inline=true",
     category: "maillots",
     description: "Maillot officiel MC Alger extérieur pour la saison actuelle.",
@@ -53,7 +53,7 @@ export const products: Product[] = [
   {
     id: "third-tshirt",
     name: "Troisième Maillot MC Alger",
-    price: 2500,
+    price: 8000,
     imageUrl: "https://puma.dz/images/products/mca/781194_04.jpg",
     category: "maillots",
     description: "Troisième maillot officiel MC Alger pour la saison actuelle.",
@@ -66,10 +66,26 @@ export const products: Product[] = [
       { size: "XXL", available: true },
     ]
   },
+ {
+    id: "four-tshirt",
+    name: "Maillot d'Entraînement MC Alger",
+    price: 8000,
+    imageUrl: "https://puma.dz/images/products/mca/781194_04.jpg",
+    category: "maillots",
+    description: "maillot d'entrainement officiel MC Alger pour la saison actuelle.",
+    availableSizes: [
+      { size: "XS", available: true },
+      { size: "S", available: true },
+      { size: "M", available: false },
+      { size: "L", available: false },
+      { size: "XL", available: true },
+      { size: "XXL", available: true },
+    ]
+  },
   {
     id: "white-tracksuit",
     name: "Survêtement Blanc MC Alger",
-    price: 5000,
+    price: 12000,
     imageUrl: "https://filebrowser-production-5917.up.railway.app/api/public/dl/hfxq6Ape?inline=true",
     category: "survêtements",
     description: "Survêtement blanc officiel MC Alger, parfait pour l'entraînement ou les tenues décontractées.",
@@ -82,7 +98,40 @@ export const products: Product[] = [
       { size: "XXL", available: false },
     ],
     discount: 10
-  }
+  },
+{
+    id: "black-tracksuit",
+    name: "Survêtement Noir MC Alger",
+    price: 12000,
+    imageUrl: "https://filebrowser-production-5917.up.railway.app/api/public/dl/iRqZfIFx?inline=true",
+    category: "survêtements",
+    description: "Survêtement noir officiel MC Alger, parfait pour l'entraînement ou les tenues décontractées.",
+    availableSizes: [
+      { size: "XS", available: true },
+      { size: "S", available: true },
+      { size: "M", available: false },
+      { size: "L", available: false },
+      { size: "XL", available: true },
+      { size: "XXL", available: false },
+    ]
+  },
+{
+    id: "red-tracksuit",
+    name: "Survêtement Grenat MC Alger",
+    price: 12000,
+    imageUrl: "https://filebrowser-production-5917.up.railway.app/api/public/dl/MAqZk7JJ?inline=true",
+    category: "survêtements",
+    description: "Survêtement noir officiel MC Alger, parfait pour l'entraînement ou les tenues décontractées.",
+    availableSizes: [
+      { size: "XS", available: true },
+      { size: "S", available: false },
+      { size: "M", available: true },
+      { size: "L", available: true },
+      { size: "XL", available: true },
+      { size: "XXL", available: false },
+    ]
+  },
+
 ];
 
 export const sponsors = [
