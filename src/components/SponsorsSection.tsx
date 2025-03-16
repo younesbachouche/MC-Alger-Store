@@ -38,7 +38,7 @@ const SponsorsSection: React.FC = () => {
             PARTENAIRES OFFICIELS
           </span>
           <br />
-          Nos Partenaires de Confiance
+          Nos Partenaires Officiels
         </h2>
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
