@@ -86,7 +86,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="flex-shrink-0 mt-0.5" />
-                <span className="text-white/80 text-sm">Stade du 5 Juillet, Alger, Algérie</span>
+                <span className="text-white/80 text-sm"> Boutique Ali Ammar Stadium, Alger, Algérie</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} />
@@ -94,7 +94,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} />
-                <span className="text-white/80 text-sm">boutique@mcalger.com</span>
+                <span className="text-white/80 text-sm">mcalger@support.com</span>
               </li>
             </ul>
           </div>
