@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import Header from "@/components/Header";
 import ProductCard from "@/components/ProductCard";
@@ -52,15 +51,16 @@ const Index = () => {
             filter: 'brightness(0.8) contrast(1.1)'
           }}
         ></div>
+        
         <div 
           className="absolute inset-0 bg-gradient-to-r from-mcalger-green/90 to-mcalger-green/70"
           style={{ mixBlendMode: 'multiply' }}
         ></div>
         
-        <div className="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center">
+        <div className="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center items-center text-center">
           <div className="max-w-xl">
             <span className="inline-block px-3 py-1 rounded-full bg-white/20 text-white text-sm font-semibold mb-3 backdrop-blur-sm animate-fade-in">
-              NOUVELLE SAISON 2023/24
+              NOUVELLE SAISON 2024/25
             </span>
             <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4 animate-fade-in" style={{ animationDelay: '0.1s', textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
               Produits Officiels MC Alger
