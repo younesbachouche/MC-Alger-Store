@@ -70,7 +70,7 @@ export const products: Product[] = [
     id: "four-tshirt",
     name: "Maillot d'Entraînement MC Alger",
     price: 8000,
-    imageUrl: "https://puma.dz/images/products/mca/781194_04.jpg",
+    imageUrl: "https://filebrowser-production-5917.up.railway.app/api/public/dl/AKdQu-h6?inline=true",
     category: "maillots",
     description: "maillot d'entrainement officiel MC Alger pour la saison actuelle.",
     availableSizes: [
