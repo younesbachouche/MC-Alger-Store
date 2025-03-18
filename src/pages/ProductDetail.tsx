@@ -229,7 +229,7 @@ const ProductDetail = () => {
                   <div className="flex items-start space-x-3">
                     <Truck size={18} className="text-mcalger-green flex-shrink-0 mt-0.5" />
                     <p className="text-sm text-mcalger-text-light">
-                      <span className="font-medium text-mcalger-text">Livraison gratuite</span> pour les commandes de plus de 5000 DZD
+                      <span className="font-medium text-mcalger-text">Livraison gratuite</span> pour les commandes de plus de 20000 DZD
                     </p>
                   </div>
                   
