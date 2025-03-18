@@ -4,6 +4,7 @@ import { Heart, Tag } from "lucide-react";
 import { Product } from "@/lib/products";
 import SizeSelector from "./SizeSelector";
 import CartButton from "./CartButton";
+import { Link, useNavigate } from "react-router-dom";
 
 interface ProductCardProps {
   product: Product;
@@ -15,6 +16,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const [isFavorite, setIsFavorite] = useState(false);
   const imageRef = useRef<HTMLImageElement>(null);
+  const navigate = useNavigate();
 
   // Check if the image is already cached
   useEffect(() => {
@@ -45,10 +47,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     return product.price - (product.price * (product.discount / 100));
   };
 
+  const handleProductClick = () => {
+    navigate(`/products/${product.id}`);
+  };
+
   return (
     <div className="group animate-fade-in product-card bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
       {/* Product Image with Loading State */}
-      <div className="relative pt-[100%] overflow-hidden bg-gray-50">
+      <div 
+        className="relative pt-[100%] overflow-hidden bg-gray-50 cursor-pointer" 
+        onClick={handleProductClick}
+      >
         <div className={`absolute inset-0 ${!isImageLoaded ? 'image-loading' : ''}`}>
           <img
             ref={imageRef}
@@ -63,7 +72,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         
         {/* Top-right buttons */}
         <button
-          onClick={() => setIsFavorite(!isFavorite)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsFavorite(!isFavorite);
+          }}
           className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm shadow-sm flex items-center justify-center transition-transform duration-300 hover:scale-110"
           aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
         >
@@ -96,7 +108,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       
       {/* Product Info */}
       <div className="p-4">
-        <h3 className="text-base font-medium text-mcalger-text mb-1 line-clamp-1">
+        <h3 
+          className="text-base font-medium text-mcalger-text mb-1 line-clamp-1 cursor-pointer hover:text-mcalger-green"
+          onClick={handleProductClick}
+        >
           {product.name}
         </h3>
         
