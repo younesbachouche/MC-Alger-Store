@@ -7,7 +7,6 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a server
     alert("Votre message a été envoyé avec succès!");
   };
 
@@ -43,7 +42,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-mcalger-text">Adresse</h3>
-                      <p className="text-mcalger-text-light">Stade Ali Ammar (Ex-Baraki), Alger, Algérie</p>
+                      <p className="text-mcalger-text-light">Stade Ali Ammar, Douira, Alger, Algérie</p>
                     </div>
                   </div>
                   
@@ -75,9 +74,9 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-medium text-mcalger-text">Heures d'ouverture</h3>
-                      <p className="text-mcalger-text-light">Lun - Ven: 9h00 - 18h00</p>
-                      <p className="text-mcalger-text-light">Sam: 10h00 - 16h00</p>
-                      <p className="text-mcalger-text-light">Dim: Fermé</p>
+                      <p className="text-mcalger-text-light">Dim - jeudi: 9h00 - 20h00</p>
+                      <p className="text-mcalger-text-light">Sam: 10h00 - 18h00</p>
+                      <p className="text-mcalger-text-light">Ven: Fermé</p>
                     </div>
                   </div>
                 </div>
@@ -88,7 +87,7 @@ const Contact = () => {
                 <h3 className="font-medium text-mcalger-text p-4 border-b">Notre Localisation</h3>
                 <div className="h-[300px] w-full">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.361795251015!2d3.1093033!3d36.71954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128e509dfe6a06e1%3A0x7fc50a9ffef7b1a0!2sStade%20Communal%20Ali%20Ammar!5e0!3m2!1sfr!2sdz!4v1717275512063!5m2!1sfr!2sdz" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3199.7007201763918!2d2.961807!3d36.6816962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128faf00492c6ac7%3A0x5c64675c9fbc2e20!2sAli-Ammar%20Stadium!5e0!3m2!1sfr!2sdz!4v1742294382572!5m2!1sfr!2sdz" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
