@@ -26,24 +26,21 @@ const SizeSelector: React.FC<SizeSelectorProps> = ({
       
       <div className="flex flex-wrap gap-2">
         {sizes.map(({ size, available }) => (
-          <div key={size} className="size-option">
-            <input
-              type="radio"
-              id={`size-${size}`}
-              name="size"
-              value={size}
-              disabled={!available}
-              checked={selectedSize === size}
-              onChange={() => available && onSelectSize(size)}
-            />
-            <label
-              htmlFor={`size-${size}`}
-              className={available ? "" : "line-through"}
-              title={available ? size : `${size} - Rupture de stock`}
-            >
-              {size}
-            </label>
-          </div>
+          <button
+            key={size}
+            onClick={() => available && onSelectSize(size)}
+            disabled={!available}
+            className={`size-option min-w-[40px] h-10 px-3 flex items-center justify-center text-sm rounded border transition-all ${
+              !available ? 
+                'border-gray-300 text-gray-400 bg-gray-100 cursor-not-allowed line-through' : 
+                selectedSize === size ? 
+                  'border-mcalger-green bg-mcalger-green/10 text-mcalger-green font-medium' : 
+                  'border-gray-300 hover:border-mcalger-green/50 text-mcalger-text'
+            }`}
+            aria-label={available ? `Sélectionner taille ${size}` : `Taille ${size} indisponible`}
+          >
+            {size}
+          </button>
         ))}
       </div>
     </div>
