@@ -21,16 +21,16 @@ const Footer: React.FC = () => {
               Mouloudia Club d'Alger, fondé en 1921, est l'un des clubs de football les plus performants d'Algérie, connu pour sa riche histoire et sa base de supporters passionnés.
             </p>
             <div className="flex space-x-3">
-              <a href="https://www.facebook.com/MCAlger.Officiel" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.facebook.com/mcalger.officiel" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Facebook size={16} />
               </a>
-              <a href="https://twitter.com/MCAlger_Fanzone" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://x.com/THEDEAN1921" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Twitter size={16} />
               </a>
-              <a href="https://www.instagram.com/mouloudia.club.alger" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.instagram.com/mcalger.officiel/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Instagram size={16} />
               </a>
-              <a href="https://www.youtube.com/channel/UC4m2J7QXwOkVUczLnD7rIxQ" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
+              <a href="https://www.youtube.com/@MouloudiaClubdAlger.officiel" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors">
                 <Youtube size={16} />
               </a>
             </div>
