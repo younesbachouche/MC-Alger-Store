@@ -44,7 +44,7 @@ const Index = () => {
         <div 
           className="parallax-bg" 
           style={{ 
-            backgroundImage: 'url("/lovable-uploads/0a1ca08e-78d0-4f29-805e-2e231b5021de.png")',
+            backgroundImage: 'url("https://i.ibb.co/ksGtq4mn/Shop-Now-2-1536x683.webp")',
             transform: `scale(1.1) translateY(${parallaxOffset}px)`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
